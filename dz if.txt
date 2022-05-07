@@ -1,0 +1,70 @@
+       //25
+       /* int x = 1;
+        if (x<-2 || x>2) {
+            System.out.println(2*x);
+        }
+        else {
+            System.out.println(-3*x);
+        }
+
+        //26
+        int x = -8;
+        if (x<=0){
+            System.out.println(-x);
+        }
+        else if (x>0 && x<2) {
+            System.out.println(x * x);
+        }
+        else if (x>=2) {
+            System.out.println(4);
+        }
+
+        //28
+        int a = 2010;
+        if (a%4==0 && a%400==0 && a%100!=0) {
+            System.out.println(a + " - это високосныц год");
+        }
+        else {
+            System.out.println(a + " - это невисокосный");
+        }
+        //29
+        int x = 14;
+        if (x<0 && x%2==0){
+            System.out.println(x + " - это отрицательное чётное");
+        }
+        else if (x<0 && x%2!=0) {
+            System.out.println(x + " - это отрицательное нечётное");
+        }
+        else if (x>0 && x%2==0) {
+            System.out.println(x + " - это положительное чётное");
+        }
+        else if (x>0 && x%2!=0) {
+            System.out.println(x + " - это положительное нечётное");
+        } else if (x==0) {
+            System.out.println(x + " - это нулевое число");
+        } */
+
+        //30
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите число от 1 до 999: ");
+        int a = in.nextInt();
+        if (a<10 && a>1 && a%2==0){
+            System.out.println(a + " - это однозначное чётное число");
+        }
+        else if (a<10 && a>1 && a%2!=0) {
+            System.out.println(a + " - это однозначное нечётное число");
+        }
+        else if (a>10 && a<100 && a%2==0){
+            System.out.println(a + " - это двузначное чётное число");
+        }
+        else if (a>10 && a<100 && a%2!=0){
+            System.out.println(a + " - это двузначное нечётное число");
+        }
+        else if (a>100 && a<1000 && a%2==0){
+            System.out.println(a + " - это трёхзначное чётное число");
+        }
+        else if (a>100 && a<1000 && a%2!=0){
+            System.out.println(a + " - это трёхзначное нечётное число");
+        }
+        else if (a<1 && a>999) {
+            System.out.println(a + " - Неправильное чило");
